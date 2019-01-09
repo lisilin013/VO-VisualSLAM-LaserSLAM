@@ -1,5 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 # visual_odometry
 
 This software is built for learning visual odometry.
@@ -57,11 +55,16 @@ This software is built for learning visual odometry.
 
 # 3 Problem formulation
 设想一个robot在某个环境下运动，它的camera system和机器人本体刚性固定（rigidly-attached），在离散时间下拍摄一系列图片。
+相邻两帧之间的变换用R，t表示，这样可以求出从初始时刻到现在的一系列变换矩阵set，最后求出一系列camera poses，需要用到初始时刻的相机坐标系位置。
+通过一个m-pose windowed BA来refine camera轨迹。
+# 4 Camera modeling and calibration
+- Pin-Hole Approximation
+- Omnidirectional Camera Model（全景相机）
+可以通过Spherical Model来等价Perspective 和 Omnidirectional Model
+全景相机的model还不清楚？
 
-- 对于monocular system，the set of images taken at times k is denoted by
-$$I_{0:n} = \{I_0,...,I_n\}$$
-# Camera modeling and calibration
-# Motion estimation
+# 5 Motion estimation
+
 # Robust estimation
 # Error propagation
 # Camera-pose optimization (bundle adjustment)
