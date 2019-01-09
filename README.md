@@ -32,7 +32,7 @@ This software is built for learning visual odometry.
 - feature detection
 - feature matching
 - motion estimation（R,t）
-  - 2d-2d(三角测量?)
+  - 2d-2d(三角测量)
   - 3d-3d(icp)
   - 3d-2d(pnp)
 - local optimization
@@ -57,6 +57,7 @@ This software is built for learning visual odometry.
 设想一个robot在某个环境下运动，它的camera system和机器人本体刚性固定（rigidly-attached），在离散时间下拍摄一系列图片。
 相邻两帧之间的变换用R，t表示，这样可以求出从初始时刻到现在的一系列变换矩阵set，最后求出一系列camera poses，需要用到初始时刻的相机坐标系位置。
 通过一个m-pose windowed BA来refine camera轨迹。
+
 # 4 Camera modeling and calibration
 - Pin-Hole Approximation
 - Omnidirectional Camera Model（全景相机）
@@ -64,6 +65,25 @@ This software is built for learning visual odometry.
 全景相机的model还不清楚？
 
 # 5 Motion estimation
+Motion estimation是VO system的核心计算步骤，计算previous image 和current image之间的R，t（also called T），通过把这个single movements 连接起来，recover出full trajectory of camera.
+
+## 有两种方法计算T
+- Apperance-based
+ 使用intensity信息，计算more expensive
+- Featured-based
+ 使用feature信息，需要match，more effective
+
+## 具体求解T有三种情况
+- 2d-2d(三角测量，epipolar geometry, conputing Essential Matrix)
+  relative scale computation， 从两帧图像是无法计算绝对尺度的，但是可以计算相对尺度。为了robustness，scale ratios通常由多对图像计算完后取均值。
+  both for monocular and stereo
+- 3d-3d(icp)
+  only for stereo
+- 3d-2d(pnp)
+  both for monocular and stereo
+
+## Triangulation and Keyframe Selection
+
 
 # Robust estimation
 # Error propagation
