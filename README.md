@@ -75,17 +75,47 @@ Motion estimation是VO system的核心计算步骤，计算previous image 和cur
 
 ## 具体求解T有三种情况
 - 2d-2d(三角测量，epipolar geometry, conputing Essential Matrix)
+  The minimal-case solution involves 5-point correspondences.
   relative scale computation， 从两帧图像是无法计算绝对尺度的，但是可以计算相对尺度。为了robustness，scale ratios通常由多对图像计算完后取均值。
   both for monocular and stereo
 - 3d-3d(icp)
+  it is necessary to triangulate 3D points. 
   only for stereo
 - 3d-2d(pnp)
-  both for monocular and stereo
+  both for monocular and stereo.
+  In the monocular case, the 3D structure needs to be triangulated from two adjacent camera views (e.g., 𝐼𝑘−2 and 𝐼𝑘−1) and then matched to 2D image features in a third view (e.g., 𝐼𝑘).
 
 ## Triangulation and Keyframe Selection
+Triangulated 3D points are determined by intersecting backprojected rays from 2D image correspondences of at least two image frames.
+啥意思？？（通过交叉来自至少两个图像帧的2D图像对应的反投影光线来确定三角化3D点）
+
+In reality, they never intersect（相交） due to
+- image noise,
+- camera model and calibration errors,
+- and feature matching uncertainty
+
+The point at minimal distance from all intersecting rays can be taken as an estimate of the 3D point position.
+(距离所有相交光线的最小距离处的点可以被视为3D点位置的估计)
+
+When frames are taken at nearby positions compared to the scene distance, 3D points will exibit large uncertainty
+
+**Therefore, 3D-3D motion estimation methods will drift much more quickly than 3D-2D and 2D-2D methods**
+
+In fact, the uncertainty introduced by triangulation affects the motion estimation. In fact, in the 3D-to-3D case the 3D position error is minimized, while in the 3D-to-2D and 2D-to-2D cases is the image reprojection error.
+
+One way to avoid this consists of skipping frames until the average uncertainty of the 3D points decreases below a certain threshold. The selected frames are called keyframes.
+
+KeyFrame Selection 在VO中是非常重要的一步，需要在update motion之前就完成。
+
+## summary
+- 在stereo情况下， 3d-2d方法比3d-3d方法drift更少
+- stereo比monocular在absolute scale上的motion和structure计算更有优势， drift也更少
+- 当场景距离比stereo baseline更大的时候，stereo degenerates(退化) into monocular VO
+- KeyFrame Seclection应该小心谨慎，可以降低drift
+- Regardless of the chosen motion computation method, local bundle adjustment (over the last m frames) should be always performed to compute a more accurate estimate of the trajectory. After bundle adjustment, the effects of the motion estimation method are much more alleviated (as long as the initialization is close to the solution)
 
 
-# Robust estimation
-# Error propagation
-# Camera-pose optimization (bundle adjustment)
-# Discussion
+# 6 Robust estimation
+# 7 Error propagation
+# 8 Camera-pose optimization (bundle adjustment)
+# 9 Discussion
