@@ -1,3 +1,5 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 # visual_odometry
 
 This software is built for learning visual odometry.
@@ -54,6 +56,10 @@ This software is built for learning visual odometry.
 同年，Nister«Visual Odometry»论文在学术环境中revived VO， VO 流传开来。
 
 # 3 Problem formulation
+设想一个robot在某个环境下运动，它的camera system和机器人本体刚性固定（rigidly-attached），在离散时间下拍摄一系列图片。
+
+- 对于monocular system，the set of images taken at times k is denoted by
+$$I_{0:n} = \{I_0,...,I_n\}$$
 # Camera modeling and calibration
 # Motion estimation
 # Robust estimation
