@@ -137,7 +137,7 @@ Fishler & Bollers 1981已经建立了存在outliers的运动估计标准方法.
 需要进行的迭代次数有如下公式计算：
 Ｎ = log(1-p)/log(1-(1-epsilon)^s)
 
-- s: 实例化模型需要的点的数量（eg: 比如估计６dof相机运动可以用5-points RANSAC, 通常需要的points num = dof - 1）
+- s: 实例化模型需要的点的数量（eg: 比如估计６dof相机运动可以用5-points RANSAC，大概需要迭代1000次, 通常需要的points num = dof - 1）
 - epsilon: outliers占数据总量的百分比
 - p: 要求计算成功的准确率
 - N: 需要迭代的次数
@@ -145,6 +145,18 @@ Fishler & Bollers 1981已经建立了存在outliers的运动估计标准方法.
 RANSAC每次算出的结果都有不同，但是对着迭代次数的增多会变得稳定，为了鲁棒性，通常迭代次数会用上述公式再乘以10倍。
 更高级的算法实现有RANSAC estimate the fraction of inliers adaptively.
 
+## 如何降低实例化模型需要的点的数量呢？
+可以通过运动约束。
+比如在二维平面，只需要估计３个参数，也就是需要2-points,大概需要迭代100次
+
+## exploit the vehicle non-holonomic constraints
+比如在二维平面，利用Ackerman转向原理，车子转向可以只用２个参数描述（1-point needed）
+
+## is it really better to use minimal sets in RANSAC?
+- 如果对算法速度有要求，那么尽量使用minimal sets
+- 如果图像噪声很大，对实时性要求没那么苛刻，使用non-minimal set会更好
+
 # 7 Error propagation
+
 # 8 Camera-pose optimization (bundle adjustment)
 # 9 Discussion
