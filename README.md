@@ -112,10 +112,39 @@ KeyFrame Selection 在VO中是非常重要的一步，需要在update motion之�
 - stereo比monocular在absolute scale上的motion和structure计算更有优势， drift也更少
 - 当场景距离比stereo baseline更大的时候，stereo degenerates(退化) into monocular VO
 - KeyFrame Seclection应该小心谨慎，可以降低drift
-- Regardless of the chosen motion computation method, local bundle adjustment (over the last m frames) should be always performed to compute a more accurate estimate of the trajectory. After bundle adjustment, the effects of the motion estimation method are much more alleviated (as long as the initialization is close to the solution)
+- 无论选择什么计算方法, local BA (over the last m frames) 总会使得轨迹估计更准确. After BA, 会减弱运动估计方法的影响 (as long as the initialization is close to the solution)
 
 
 # 6 Robust estimation
+匹配点里面包含outliers，也就是包含错误匹配，Robust Estimation的工作就是剔除这些outliers。
+造成outliers的原因：
+
+- image noise
+- occlusions(闭塞？啥意思？)
+- blur
+- changes in view point and illumination, feature detector 和descriptor的数学模型没有考虑这些变化
+
+## RANSAC Example: Line Extraction Algorithm Steps
+- select sample of 2 points at random
+- calculate model params that fit the data in the sample
+- calculate error function for every point left in the sample
+- select data that support current hypothesis, store the inliers number
+- repeat sampling and do the same thing, until we find a large enough inliners number or iterations number（eg: 1000） is enough, then keep the corresponding selected data that fits hypothesis.
+- finally, use the inliers last step to estimate the real model
+
+Fishler & Bollers 1981已经建立了存在outliers的运动估计标准方法.
+
+需要进行的迭代次数有如下公式计算：
+Ｎ = log(1-p)/log(1-(1-epsilon)^s)
+
+- s: 实例化模型需要的点的数量（eg: 比如估计６dof相机运动可以用5-points RANSAC, 通常需要的points num = dof - 1）
+- epsilon: outliers占数据总量的百分比
+- p: 要求计算成功的准确率
+- N: 需要迭代的次数
+
+RANSAC每次算出的结果都有不同，但是对着迭代次数的增多会变得稳定，为了鲁棒性，通常迭代次数会用上述公式再乘以10倍。
+更高级的算法实现有RANSAC estimate the fraction of inliers adaptively.
+
 # 7 Error propagation
 # 8 Camera-pose optimization (bundle adjustment)
 # 9 Discussion
