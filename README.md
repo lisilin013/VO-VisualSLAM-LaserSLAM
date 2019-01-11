@@ -157,6 +157,53 @@ RANSAC每次算出的结果都有不同，但是对着迭代次数的增多会�
 - 如果图像噪声很大，对实时性要求没那么苛刻，使用non-minimal set会更好
 
 # 7 Error propagation
+连接变换时，相机姿势的不确定性总是在增加。 因此，保持个体变换的不确定性很小是很重要的。
 
 # 8 Camera-pose optimization (bundle adjustment)
-# 9 Discussion
+## windowed camera-pose optimization
+## windowed BA
+## Loop Detection
+- loop detection对于位置图优化来讲是非常重要的约束
+- 这些约束形成了通常相隔很远的节点之间的图形边缘，并且在这些节点之间可能累积了大的drift
+- 在长时间没有看到它或者回到先前映射的区域之后重新观察地标的事件被称为loop detection
+- 通过评估当前相机图像和过去相机图像之间的visual similarity，可以找到loop constraints
+- visual similarity可以通过使用global image descriptors或者local image descriptors(参考Visual SLAM)
+
+## 关于BA的讨论
+- 和2-view VO(这是啥意思？)相比，windowded BA可以降低drift, 因为图像帧之间存在constrints
+- window size m的选取根据计算能力而定
+- BA的计算复杂度为O((qN+lm)^3)(应该是对的吧？)
+  - N: number of points
+  - m: number of poses
+  - q: number of params for points
+  - l: number of params for camera poses
+  
+## improving VO arruracy
+- using other sensors(imu, compass, gps, laser)
+- IMU+monocular camerm 可以获取absolute scale, why?
+- 确保有许多点（thoudsands）均匀覆盖图像
+
+## VO applications
+- space exploration
+- [MAV navigation(Micro Aerial Vehicles)](https://www.youtube.com/watch?v=jmKXCdEbF_E&feature=youtu.be)
+- underwater vehicles
+- automative industry
+- [mouse scanner](https://www.youtube.com/watch?v=A4NGXFv27AE&feature=youtu.be)
+
+## Software & Dataset
+- 5-points algorithm
+- Sift GPU
+- GPUSurf
+- GPU-KLT
+- Originam implementation of FAST detector
+- Originam implementation of BRIEF descriptor
+- BRISK feature detector
+- OCamCalib: Omnidirectional calibration
+- FAB-map: Visual-word-based loop detection
+- Vosearch: visual-word-based place recognition and image search
+- SBA: sparse bundle ajustment
+- SSBA: simple sparse ba
+- G2O
+- RAWSEEDS: datsets from different sensors
+- EHT-OMNI-VO: an omnidirectional-image dateset from a car for several kilometers
+- SFKY-MAV: camera-imu dataset from an aerial vehicle with vicon data for ground truth
