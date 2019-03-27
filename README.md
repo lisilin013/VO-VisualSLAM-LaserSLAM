@@ -7,6 +7,7 @@
 - [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)
 - [Advanced implementation of LOAM](https://github.com/HKUST-Aerial-Robotics/A-LOAM)
 - [LSD-SLAM](https://github.com/tum-vision/lsd_slam)
+- [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2)
 
 # 比较牛叉的几个SLAM领域的实验室
 - [HKUST-Aerial-Robotics](https://github.com/HKUST-Aerial-Robotics)
