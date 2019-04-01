@@ -12,7 +12,7 @@
 - [ ] [双目视觉slam代码](https://github.com/SiuKeungm/stereoVO)
 - [ ] [simple_slam_loop_closure代码](https://github.com/nicolov/simple_slam_loop_closure)
 - [ ] [VisualOdometry代码](https://github.com/ldq9526/VisualOdometry)
-- [ ] [g2o入门详解--知乎](https://zhuanlan.zhihu.com/p/47315608)
+- [x] [g2o入门详解--知乎](https://zhuanlan.zhihu.com/p/47315608)
 - [ ] g2o paper reading
 
 目前slam14讲中公式推到马马虎虎地可以推导个差不多，g2o代码实现也能够大致看明白了。
