@@ -6,12 +6,15 @@
 - [ORBSLAM 冯兵视频分享](https://www.bilibili.com/video/av7102994/)
 
 # 深入g2o无法自拔
-- [g2o tutorial](https://blog.csdn.net/heyijia0327/article/details/47813405)
+- [X] [CSDN g2o tutorial](https://blog.csdn.net/heyijia0327/article/details/47813405)
 
 - [graph slam 代码](https://github.com/versatran01/graphslam)
 - [双目视觉slam代码](https://github.com/SiuKeungm/stereoVO)
 - [simple_slam_loop_closure代码](https://github.com/nicolov/simple_slam_loop_closure)
 - [VisualOdometry代码](https://github.com/ldq9526/VisualOdometry)
+- [g2o入门详解--知乎](https://zhuanlan.zhihu.com/p/47315608)
+
+目前slam14讲中公式推到马马虎虎地可以推导个差不多，g2o代码实现也能够大致看明白了。
 
 # Kalman Filter
 - [KF视频讲解](https://www.bilibili.com/video/av24225243/?spm_id_from=333.788.videocard.6)
