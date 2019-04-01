@@ -8,18 +8,22 @@
 # 深入g2o无法自拔
 - [X] [CSDN g2o tutorial](https://blog.csdn.net/heyijia0327/article/details/47813405)
 
-- [graph slam 代码](https://github.com/versatran01/graphslam)
-- [双目视觉slam代码](https://github.com/SiuKeungm/stereoVO)
-- [simple_slam_loop_closure代码](https://github.com/nicolov/simple_slam_loop_closure)
-- [VisualOdometry代码](https://github.com/ldq9526/VisualOdometry)
-- [g2o入门详解--知乎](https://zhuanlan.zhihu.com/p/47315608)
+- [ ] [graph slam 代码](https://github.com/versatran01/graphslam)
+- [ ] [双目视觉slam代码](https://github.com/SiuKeungm/stereoVO)
+- [ ] [simple_slam_loop_closure代码](https://github.com/nicolov/simple_slam_loop_closure)
+- [ ] [VisualOdometry代码](https://github.com/ldq9526/VisualOdometry)
+- [ ] [g2o入门详解--知乎](https://zhuanlan.zhihu.com/p/47315608)
+- [ ] g2o paper reading
 
 目前slam14讲中公式推到马马虎虎地可以推导个差不多，g2o代码实现也能够大致看明白了。
 
 # Kalman Filter
-- [KF视频讲解](https://www.bilibili.com/video/av24225243/?spm_id_from=333.788.videocard.6)
+- [ ] [KF视频讲解](https://www.bilibili.com/video/av24225243/?spm_id_from=333.788.videocard.6)
 
 # VO 模块技能包
+- [x] 李代数推导使用
+- [ ] 常用非线性优化方法
+  - SVD等方法推导理解
 - [x] 2d-2d对极几何,求解相机运动两种方法
   - 本质矩阵，基础矩阵
   - 单应矩阵
