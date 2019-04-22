@@ -12,3 +12,16 @@
 # 比较牛叉的几个SLAM领域的实验室
 - [HKUST-Aerial-Robotics](https://github.com/HKUST-Aerial-Robotics)
 - [tum-vision](https://github.com/tum-vision)
+
+# Navigation Course Plan
+- [ ] slam14讲中原理，代码，公式推导
+- [ ] 配着slam论文走
+- [ ] 前面讲概率知识的时候，对着[python-robotics](https://github.com/AtsushiSakai/PythonRobotics)一并学习
+- [ ] 点云、图像的基本知识操作，主要是**pcl和opencv**的全面的功能了解和常用函数的原理
+
+# 源代码阅读计划
+- eth sensorfusion
+- robotlocalization
+- orbSLAM
+- vinsMONO
+- cartographer
