@@ -41,3 +41,5 @@ LOAM的参考文章:
 - [cartographer](https://github.com/googlecartographer/cartographer.git) 值得注意的是，cartographer里面也包括定位的功能
 - [cartographer_ros](https://github.com/googlecartographer/cartographer_ros.git)
 
+## Interesting Project
+- [点云稠密化](https://github.com/RobustFieldAutonomyLab/Lidar-Super-Resolution)
