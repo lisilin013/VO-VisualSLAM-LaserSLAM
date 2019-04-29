@@ -16,6 +16,18 @@
 - [loam_velodyne: 根据原始版本修改后的一个版本，高星，拿来试一试](https://github.com/daobilige-su/loam_velodyne.git)
 - [LOAM-multi-thread: 多线程版本的LOAM，不需要ros即可运行](https://github.com/tiger20/LOAM-multi-thread.git)
 
+LOAM的参考文章:
+
+- [详述了LOAM的算法细节，公式推导](https://zhuanlan.zhihu.com/p/57351961)
+  - 特征点提取
+  - scan预处理，分线束，畸变校正加时间戳（运动模型这一块没讲）
+  - 优化公式推导
+  - 部分代码注释
+- [重磅源码分析，赞](https://loam-velodyne.readthedocs.io/en/latest/index.html)
+- [详细的代码解析](https://zhuanlan.zhihu.com/p/29719106)  
+- [代码](https://www.twblogs.net/a/5b8cfd0e2b71771883387e4a)
+- [视频讲解](https://www.youtube.com/watch?v=sLTs9Xp5pyE)
+
 ## Sensor Fusion
 另外一个方面就是涉及到多传感器融合的，包括：
 
@@ -28,3 +40,4 @@
 - [hdl_graph_slam](https://github.com/koide3/hdl_graph_slam.git) hdl里面也实现了一个使用imu的ukf给ndt匹配做预测的pose_estimator，但是貌似直接用不好用，没有仔细研究，存疑。此外，hdl是一套东西，包括SLAM，Localization，people tracking三部分
 - [cartographer](https://github.com/googlecartographer/cartographer.git) 值得注意的是，cartographer里面也包括定位的功能
 - [cartographer_ros](https://github.com/googlecartographer/cartographer_ros.git)
+
