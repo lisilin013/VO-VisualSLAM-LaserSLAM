@@ -1,5 +1,5 @@
-# Laser SLAM
-## Robotics: Estimation and Learning 
+# 1 Laser SLAM
+## 1.1 Robotics: Estimation and Learning 
 [coursera课程链接](https://www.coursera.org/learn/robotics-learning)  
 
 主要讲机器人的状态估计，分四个部分：
