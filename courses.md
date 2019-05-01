@@ -15,5 +15,5 @@ Soem reference docs:
 - [占据栅格地图Occupied Grid Map](https://zhuanlan.zhihu.com/p/21738718)
 - [公开课的笔记week1](https://blog.yxwang.me/2018/07/robotics-slam-week1/)
 - [公开课的笔记week2](https://blog.yxwang.me/2018/07/robotics-slam-week2/)
-- [公开课的笔记week3](https://blog.yxwang.me/2018/07/robotics-slam-week3/)
-- [公开课的笔记week4](https://blog.yxwang.me/2018/07/robotics-slam-week4/)
+- [公开课的笔记week3](https://blog.yxwang.me/2018/08/robotics-slam-week3/)
+- [公开课的笔记week4](https://blog.yxwang.me/2018/08/robotics-slam-week4/)
