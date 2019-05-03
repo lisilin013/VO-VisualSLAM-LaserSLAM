@@ -7,7 +7,8 @@
 - Gaussian Model Learning
 主要讲了高斯模型（一维，二维，高维），如何利用Maximum-Likelyhood-Estimate(MLE)估计高斯模型的参数。然后介绍了Gaussian-Mixture-Mode(GMM),并且如何利用Expectation-Maximization(EM)算法估计GMM的参数。
 - Bayesian Estimation - Target Tracking
-- Mapping
+- Mapping 
+主要讲了Occupied-Grid-Map算法原理，以及如何利用一组二维激光数据构造二维栅格地图。使用几率Odd来描述grid的占据情况，利用贝叶斯估计推导grid的状态更新方程。
 - Bayesian Estimation - Localization
 
 Soem reference docs:
