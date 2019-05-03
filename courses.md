@@ -9,7 +9,8 @@
 - Bayesian Estimation - Target Tracking
 - Mapping 
 主要讲了Occupied-Grid-Map算法原理，以及如何利用一组二维激光数据构造二维栅格地图。使用几率Odd来描述grid的占据情况，利用贝叶斯估计推导grid的状态更新方程。
-- Bayesian Estimation - Localization
+- Bayesian Estimation - Localization 
+讲了如何利用ParticleFilter对机器人进行定位；如何利用icp点云匹配为机器人定位
 
 Soem reference docs:
 
@@ -18,3 +19,5 @@ Soem reference docs:
 - [公开课的笔记week2](https://blog.yxwang.me/2018/07/robotics-slam-week2/)
 - [公开课的笔记week3](https://blog.yxwang.me/2018/08/robotics-slam-week3/)
 - [公开课的笔记week4](https://blog.yxwang.me/2018/08/robotics-slam-week4/)
+
+这门课程有四个作业，做完后再更新，
