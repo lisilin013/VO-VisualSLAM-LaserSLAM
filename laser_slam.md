@@ -24,7 +24,7 @@ LOAM的参考文章:
   - 优化公式推导
   - 部分代码注释
 - [重磅源码分析，赞](https://loam-velodyne.readthedocs.io/en/latest/index.html)
-- [详细的代码解析](https://zhuanlan.zhihu.com/c_131391131)  
+- [ ] [详细的代码解析](https://zhuanlan.zhihu.com/c_131391131)  
 - [代码](https://www.twblogs.net/a/5b8cfd0e2b71771883387e4a)
 - [视频讲解](https://www.youtube.com/watch?v=sLTs9Xp5pyE)
 
