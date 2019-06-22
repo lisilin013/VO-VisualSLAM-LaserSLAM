@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="hw1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\CLionProjects\;CMake Files\..\..\..\..\CLionProjects\auto_car_slam\;CMake Files\..\..\..\..\CLionProjects\auto_car_slam\slambook\;CMake Files\..\..\..\..\CLionProjects\auto_car_slam\slambook\3rdparty\;CMake Files\..\..\..\..\CLionProjects\auto_car_slam\slambook\3rdparty\Sophus\;CMake Files\..\..\..\..\CLionProjects\auto_car_slam\slambook\3rdparty\Sophus\build\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="update_RQ">
+				<Option output="/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/update_RQ" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/nrsl/CLionProjects/auto_car_slam/slambook/3rdparty/Sophus"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 update_RQ"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="update_RQ/fast">
+				<Option output="/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/update_RQ" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/nrsl/CLionProjects/auto_car_slam/slambook/3rdparty/Sophus"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 update_RQ/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/main.cpp">
+			<Option target="update_RQ"/>
+		</Unit>
+		<Unit filename="/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/nrsl/code/VO-VisualSLAM-LaserSLAM/vio_hw/hw1/../../../../CLionProjects/auto_car_slam/slambook/3rdparty/Sophus/build/SophusConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\CLionProjects\auto_car_slam\slambook\3rdparty\Sophus\build\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
