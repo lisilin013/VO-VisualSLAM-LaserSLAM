@@ -1,0 +1,3 @@
+./vio_hw/*/cmake-build-debug
+./vio_hw/*/.idea
+./vio_hw/*/build
