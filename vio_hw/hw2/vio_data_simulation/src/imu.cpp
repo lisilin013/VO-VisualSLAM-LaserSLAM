@@ -143,7 +143,6 @@ MotionData IMU::MotionModel(double t)
     data.imu_velocity = dp;
     data.timestamp = t;
     return data;
-
 }
 
 /// \brief 读取生成的imu数据并用imu动力学模型对数据进行计算，最后保存imu积分以后的轨迹，用来验证数据以及模型的有效性。
