@@ -4,3 +4,11 @@ vio_hw/*/build
 vio_hw/*/*/cmake-build-debug
 vio_hw/*/*/.idea
 vio_hw/*/*/build
+vio_hw/*/*/devel
+vio_hw/*/*/.catkin_workspace
+vio_hw/*/cmake-build-debug
+vio_hw/*/.idea
+vio_hw/*/build
+vio_hw/*/devel
+vio_hw/*/.catkin_workspace
+
