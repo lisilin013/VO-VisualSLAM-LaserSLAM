@@ -43,4 +43,4 @@ LOAM的参考文章:
 - [cartographer_ros](https://github.com/googlecartographer/cartographer_ros.git)
 
 ## Interesting Project
-- [点云稠密化](https://github.com/RobustFieldAutonomyLab/Lidar-Super-Resolution)
+- [基于深度学习的16线激光雷达点云稠密化](https://github.com/RobustFieldAutonomyLab/lidar_super_resolution)
